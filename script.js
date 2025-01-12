@@ -15,6 +15,9 @@
 
 //verifying capcha value
 
+var text = document.getElementById("text")
+var mail = document.getElementById("mail")
+
 var submit = document.getElementById("submit")
 var capchaInput = document.getElementById("capchaInput")
 
@@ -33,6 +36,8 @@ submit.addEventListener("click", function () {
 
     capchaGenerate();
     capchaInput.value = "";
+    text.value = "";
+    mail.value = "";
 })
 
 //page refresh function call
